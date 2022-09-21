@@ -15,5 +15,5 @@ function inverserNombre(nb) {
 /* 
 // V2 /!\ à utiliser uniquement pour Halloween /!\
 
-const inverserNombre = n => Number(Array.from(n.toString()).reverse().join(""));
+const inverserNombre = n => parseInt(Array.from(n.toString()).reverse().join(""));
  */
