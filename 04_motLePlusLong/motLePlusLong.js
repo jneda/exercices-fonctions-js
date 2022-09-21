@@ -21,5 +21,5 @@ function log(x) {
 }
 
 log("toto tonton");
-log("Coucou maman je suis dévelopeur web");
+log("Coucou maman je suis développeur web");
 log("a bcd ef");

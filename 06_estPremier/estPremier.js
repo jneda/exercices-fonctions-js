@@ -8,7 +8,7 @@ https://fr.wikipedia.org/wiki/Crible_d%27%C3%89ratosth%C3%A8ne
 c'est compliqué, alors on va faire simple :
 
 on teste la division de tous les entiers compris entre 2 et n
-NB: ce fichier s'autodétruire si Sami passe dans un rayon de 25m.*/
+NB: ce fichier s'autodétruira si Sami passe dans un rayon de 25m.*/
 
 function estPremier(n) {
   if (n < 2) {
