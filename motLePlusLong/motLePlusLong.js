@@ -1,0 +1,1 @@
+/* 3/ Écrivez une fonction JavaScript qui accepte une chaîne comme paramètre et convertit la première lettre de chaque mot de la chaîne en majuscule. */
