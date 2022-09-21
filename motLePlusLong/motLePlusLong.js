@@ -1,1 +1,5 @@
-/* 3/ Écrivez une fonction JavaScript qui accepte une chaîne comme paramètre et convertit la première lettre de chaque mot de la chaîne en majuscule. */
+/* 
+4/ Écrivez une fonction JavaScript qui accepte une chaîne comme paramètre et recherchez le mot le plus long dans la chaîne.
+Ex : « je suis développeur web »
+Sortie prévue : « développeur »
+*/

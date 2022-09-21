@@ -1,0 +1,2 @@
+/* 6/ Écrivez une fonction JavaScript qui accepte un nombre comme paramètre et vérifiez que le nombre est premier ou non.
+Un nombre entier naturel (supérieur ou égal à 2) est un nombre premier s'il admet exactement 2 diviseurs : 1 et lui-même. */

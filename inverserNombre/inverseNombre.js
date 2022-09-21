@@ -12,7 +12,8 @@ function inverserNombre(nb) {
   return parseInt(result);
 }
 
-console.log(inverserNombre(123456));
-// inverserNombre(12);
-// console.log("*");
-// inverserNombre(7645878789512);
+/* 
+// V2 /!\ à utiliser uniquement pour Halloween /!\
+
+const inverserNombre = n => Number(Array.from(n.toString()).reverse().join(""));
+ */
