@@ -10,7 +10,9 @@ function compteVoyelles(chaine) {
 
   let compte = 0;
   for (const car of chaine.toLowerCase()) { // on uniformise la casse
-    if (voyelles.includes(car)) { // on se sert de la méthode String.prototype.includes() qui renvoie un booléen
+    if (voyelles.includes(car)) {
+    // on se sert de la méthode String.prototype.includes() qui renvoie true
+    // si le caractère testé est dans la chaîne des voyelles
       compte++;
     }
   }
