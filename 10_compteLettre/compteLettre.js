@@ -7,8 +7,11 @@ Sortie prévue : 3 */
 
 function compteLettres(chaine, car) {
   // uniformisation de la casse
+
   chaine = chaine.toLowerCase();
   car = car.toLowerCase();
+
+  // on compte
 
   let compte = 0;
   for (const c of chaine) {
@@ -19,6 +22,8 @@ function compteLettres(chaine, car) {
 
   return compte;
 }
+
+// tests en dur
 
 const log = (x, y) => console.log(x + " | " + y + " => " + compteLettres(x, y));
 

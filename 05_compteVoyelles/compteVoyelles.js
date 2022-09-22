@@ -2,15 +2,25 @@
 et compte le nombre de voyelles dans la chaîne.*/
 
 function compteVoyelles(chaine) {
+  // on stocke les voyelles dans une chaîne pour comparaison
+
   const voyelles = "aeiouy";
+
+  // on compte
+
   let compte = 0;
   for (const car of chaine.toLowerCase()) {
     if (voyelles.includes(car)) {
       compte++;
     }
   }
+
+  // et on renvoie le résultat
+
   return compte;
 }
+
+// tests en dur
 
 const log = x => console.log(x + " => " + compteVoyelles(x));
 

@@ -7,7 +7,7 @@ s'il admet exactement 2 diviseurs : 1 et lui-même. */
 https://fr.wikipedia.org/wiki/Crible_d%27%C3%89ratosth%C3%A8ne
 c'est compliqué, alors on va faire simple :
 
-on teste la division de tous les entiers compris entre 2 et n
+on teste la division de n par tous les entiers compris entre 2 et n
 NB: ce fichier s'autodétruira si Sami passe dans un rayon de 25m.*/
 
 function estPremier(n) {
@@ -25,6 +25,8 @@ function estPremier(n) {
 
 // TODO: implémenter un chronomètre histoire de rire
 // TODO: implémenter le crible tout de même
+
+// tests en dur
 
 function log(x) {
   console.log(x + " => " + estPremier(x));

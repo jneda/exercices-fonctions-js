@@ -2,25 +2,31 @@
 Un palindrome est un mot, une phrase ou une séquence qui se lit de la même manière vers l'arrière que vers l'avant, par exemple, kayak, été, rêver. */
 
 function estPalindrome(chaine) {
+  // traitement de l'entrée
+
   chaine = chaine.toLowerCase(); // on uniformise la casse
   chaine = chaine.split(" ").join(""); // on supprime les espaces
 
   // constantes utilitaires
+
   const nbLettres = chaine.length;
   const indexFin = nbLettres - 1; 
   const indexMilieu = Math.floor(nbLettres / 2);
 
   // on compare un par un les caractères du début et de la fin en progressant vers le milieu
   
-  // console.log(`nbLettres : ${nbLettres} indexMilieu : ${indexMilieu}`);
   for (let i = 0; i < indexMilieu; i++) {
-    // console.log(`chaine.charAt(${i}) : ${chaine.charAt(i)} ? chaine.charAt(${indexFin - i}) ${chaine.charAt(indexFin - i)}`);
     if (chaine.charAt(i) !== chaine.charAt(indexFin - i)) {
-      return false;
+      return false; // les caractères sont différents : on sort
     }
   }
+
+  // on a passé la boucle : tous les caractères étaient identiques
+  
   return true;
 }
+
+// tests en dur
 
 console.log("toto", estPalindrome("toto"));
 console.log("pythagore", estPalindrome("pythagore"));

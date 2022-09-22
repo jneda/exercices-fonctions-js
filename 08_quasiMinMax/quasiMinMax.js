@@ -4,16 +4,22 @@ et le deuxième plus grand nombre.
 Ex : let arr = [1,2,3,4,5]
 Sortie prévue : 2,4 */
 
-// faisons simple : on trie le tableau en ordre croissant
-// et on retourne la seconde valeur et l'avant-dernière
-
 function quasiMinMax(nombres) {
+  // on sort si la condition n'est pas respectée
+
   if (nombres.length <= 1) {
     return [];
   }
+
+  // faisons simple : on trie le tableau en ordre croissant
   nombres.sort();
+
+  // et on retourne la seconde valeur et l'avant-dernière
+
   return([nombres[1], nombres[nombres.length-2]]);
 }
+
+// tests en dur
 
 const log = x => console.log(x + " => " + quasiMinMax(x));
 

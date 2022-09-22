@@ -2,11 +2,18 @@
 Typeof renvoie six valeurs possibles : object, boolean, function, number, string,
 and undefined. */
 
+// en définitive, on enveloppe l'opérateur typeof dans une fonction 
+
 function typeDe(x) {
   return typeof x;
 }
 
-// const flechee = x => typeof x;
+// variante en fonction fléchée
+/* 
+const flechee = x => typeof x;
+*/
+
+// tests en dur
 
 function log(x) { console.log(x + " => " + typeDe(x)); }
 

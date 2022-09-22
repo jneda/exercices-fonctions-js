@@ -6,6 +6,10 @@ Exemple de fonction : Longest_Country_Name(["Australie", "Allemagne",
 Sortie prévue : "États-Unis d'Amérique" */
 
 function plusLongDansListe(liste) {
+  // cf 04_motLePlusLong
+
+  // recherche de l'index du mot le plus long
+  
   let indexPlusLong = 0;
 
   for (let i = 1; i < liste.length; i++) {
@@ -16,6 +20,8 @@ function plusLongDansListe(liste) {
 
   return liste[indexPlusLong];
 }
+
+// tests en dur
 
 function log(x) { console.log(x + " => " + plusLongDansListe(x)) };
 

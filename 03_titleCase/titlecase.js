@@ -50,18 +50,19 @@ function toTitleCase(chaine) {
 }
 */
 
-// patate chaude !
+// patate chaude ! enchaînement de méthodes
 
 function toTitleCase(chaine) {
   return chaine
-    .split(" ")
-    .map(function (mot) {
+    .split(" ") // conversion de la chaîne en tableau de chaînes
+    .map(function (mot) { // on renvoie un tableau des chaînes en titleCase
       return mot.charAt(0).toUpperCase() + mot.slice(1);
     })
-    .join(" ");
+    .join(" "); // conversion du tableau en chaîne
 }
 
-// tests
+// tests en dur
+
 function log(x) {
   console.log(x, " => ", toTitleCase(x));
 }
