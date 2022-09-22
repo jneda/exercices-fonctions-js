@@ -9,6 +9,7 @@ function compteVoyelles(chaine) {
   // on compte
 
   let compte = 0;
+  // dans une boucle for ... of
   for (const car of chaine.toLowerCase()) { // on uniformise la casse
     if (voyelles.includes(car)) {
     // on se sert de la méthode String.prototype.includes() qui renvoie true
