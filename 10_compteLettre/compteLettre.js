@@ -6,12 +6,17 @@ Exemples d'arguments : function maFunc(‘www.alibaba.com’, ’a’)
 Sortie prévue : 3 */
 
 function compteLettres(chaine, car) {
+  // uniformisation de la casse
+  chaine = chaine.toLowerCase();
+  car = car.toLowerCase();
+
   let compte = 0;
-  for (const c of chaine.toLowerCase()) {
-    if (c === car.toLowerCase()) {
+  for (const c of chaine) {
+    if (c === car) {
       compte++;
     }
   }
+
   return compte;
 }
 

@@ -1,7 +1,9 @@
 /* 3/ Écrivez une fonction JavaScript qui accepte une chaîne comme paramètre et
 convertit la première lettre de chaque mot de la chaîne en majuscule. */
 
+// Version basique
 
+/* 
 function toTitleCase(chaine) {
   const mots = chaine.split(" ");
   for (let i = 0; i < mots.length; i++) {
@@ -10,7 +12,7 @@ function toTitleCase(chaine) {
   }
   return mots.join(" ");
 }
-
+*/
 
 // avec Array.prototype.forEach()
 
@@ -26,14 +28,16 @@ function toTitleCase(chaine) {
 
 // avec Array.prototype.map()
 
-/* 
+
 function toTitleCase(chaine) {
   const mots = chaine.split(" ");
-  return mots.map(function(mot) {
-    return mot.charAt(0).toUpperCase() + mot.slice(1);
-  }).join(" ");
+  return mots
+    .map(function (mot) {
+      return mot.charAt(0).toUpperCase() + mot.slice(1);
+    })
+    .join(" ");
 }
-*/
+
 
 // de même avec fonction fléchée
 
