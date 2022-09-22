@@ -28,7 +28,7 @@ function toTitleCase(chaine) {
 
 // avec Array.prototype.map()
 
-
+/* 
 function toTitleCase(chaine) {
   const mots = chaine.split(" ");
   return mots
@@ -37,7 +37,7 @@ function toTitleCase(chaine) {
     })
     .join(" ");
 }
-
+*/
 
 // de même avec fonction fléchée
 
@@ -49,6 +49,17 @@ function toTitleCase(chaine) {
     .join(" ");
 }
 */
+
+// patate chaude !
+
+function toTitleCase(chaine) {
+  return chaine
+    .split(" ")
+    .map(function (mot) {
+      return mot.charAt(0).toUpperCase() + mot.slice(1);
+    })
+    .join(" ");
+}
 
 // tests
 function log(x) {
