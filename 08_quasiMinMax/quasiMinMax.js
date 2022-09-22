@@ -8,8 +8,8 @@ Sortie prévue : 2,4 */
 // et on retourne la seconde valeur et l'avant-dernière
 
 function quasiMinMax(nombres) {
-  if (nombres.length === 1) {
-    return nombres.concat(nombres);
+  if (nombres.length <= 1) {
+    return [];
   }
   nombres.sort();
   return([nombres[1], nombres[nombres.length-2]]);
@@ -22,3 +22,4 @@ log([4, 5, 1, 3, 2]);
 log([3, 1, 2]);
 log([26,42]);
 log([666]);
+log([]);
