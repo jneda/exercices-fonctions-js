@@ -14,6 +14,7 @@ function compteLettres(chaine, car) {
   // on compte
 
   let compte = 0;
+  // boucle for ... of
   for (const c of chaine) {
     if (c === car) {
       compte++;
