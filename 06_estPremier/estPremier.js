@@ -3,28 +3,24 @@ et vérifiez que le nombre est premier ou non.
 Un nombre entier naturel (supérieur ou égal à 2) est un nombre premier
 s'il admet exactement 2 diviseurs : 1 et lui-même. */
 
-/* le crible d'Erathosthène
-https://fr.wikipedia.org/wiki/Crible_d%27%C3%89ratosth%C3%A8ne
-c'est compliqué, alors on va faire simple :
+/* test de primalité
+https://fr.wikipedia.org/wiki/Test_de_primalit%C3%A9
 
-on teste la division de n par tous les entiers compris entre 2 et n
-NB: ce fichier s'autodétruira si Sami passe dans un rayon de 25m.*/
+on teste la division de n par tous les entiers compris entre 2 et 
+racine carrée de n */
 
 function estPremier(n) {
   if (n < 2) {
     return false;
   }
 
-  for (let i = 2; i < n; i++) {
+  for (let i = 2; i <= Math.sqrt(n); i++) {
     if (n % i === 0) {
       return false;
     }
   }
   return true;
 }
-
-// TODO: implémenter un chronomètre histoire de rire
-// TODO: implémenter le crible tout de même
 
 // tests en dur
 
