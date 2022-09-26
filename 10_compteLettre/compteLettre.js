@@ -26,7 +26,9 @@ function compteLettres(chaine, car) {
 
 // tests en dur
 
-const log = (x, y) => console.log(x + " | " + y + " => " + compteLettres(x, y));
+function log (x, y) {
+  console.log(x + " | " + y + " => " + compteLettres(x, y));
+};
 
 log("www.alibaba.com", "a");
 log("toto", "u");
